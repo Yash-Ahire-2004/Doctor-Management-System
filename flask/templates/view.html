@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <title>View Appointments</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<body>
+    <h1>View Appointments</h1>
+    {% if appointments %}
+    <table>
+        <tr>
+            <th>Appointment</th>
+            <th>Patient Name</th>
+            <th>Doctor Name</th>
+            <th>Doctor Specialization</th>
+            <th>Date</th>
+            <th>Time</th>
+        </tr>
+        {% for appointment in appointments %}
+        <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ appointment.patient_name }}</td>
+            <td>{{ appointment.doctor_name }}</td>
+            <td>{{ appointment.doctor_specialization }}</td>
+            <td>{{ appointment.date }}</td>
+            <td>{{ appointment.time }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <h2>No appointments scheduled.</h2>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html
+<html>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <title>Cancel Appointment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<body>
+    <h1>Cancel Appointment</h1>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+    <form method="POST" action="/cancel">
+        <label for="patient_name">Patient Name:</label>
+        <input type="text" name="patient_name" id="patient_name" required><br>
+        <input type="submit" value="Cancel Appointment">
+    </form>
+</body>
+</html>    

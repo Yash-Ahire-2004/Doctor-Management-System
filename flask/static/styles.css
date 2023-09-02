@@ -1,0 +1,156 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* index.html */
+body {
+  background-color: #eaeaf4;
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #333;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Rest of the CSS code remains the same */
+
+  
+/* Color Variables */
+:root {
+    --primary-color: #000000;
+    --secondary-color: #0d0d0e;
+    --accent-color: #e83e8c;
+  }
+  
+  /* index.html */
+  body {
+    background-color: #fffeff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: var(--secondary-color);
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  a {
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+  
+  /* add_doctor.html, schedule.html, view.html, cancel.html */
+  form {
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+  
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: var(--accent-color);
+  }
+  
+  /* view.html */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: var(--secondary-color);
+    color: #fff;
+  }
+  
+  /* cancel.html */
+  p {
+    color: rgb(247, 241, 240);
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #dcd8dc;
+    color: #0e0d0d;
+    padding: 1px;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 14px;
+    color: #040404;
+    margin-bottom: 0;
+  }
+  
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  footer ul li a {
+    color: #f23f0d;
+    text-decoration: none;
+  }
+  

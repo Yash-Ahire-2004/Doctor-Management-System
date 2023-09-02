@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <title>Add Doctor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<body>
+    <h1>Add Doctor</h1>
+    <form method="POST" action="/add_doctor">
+        <label for="doctor_name">Doctor Name:</label>
+        <input type="text" name="doctor_name" id="doctor_name" required><br>
+
+        <label for="doctor_specialization">Doctor Specialization:</label>
+        <input type="text" name="doctor_specialization" id="doctor_specialization" required><br>
+
+        <input type="submit" value="Add Doctor">
+    </form>
+</body>
+</html>
